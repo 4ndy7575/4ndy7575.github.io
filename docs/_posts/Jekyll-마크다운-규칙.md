@@ -1,7 +1,9 @@
-`Jekyll 마크다운 규칙`
-user
+# Jekyll 마크다운 규칙
+
+`user`  
 jekyll 마크다운 작성 할 때 제일 앞에 작성하는 내용에 규칙 알려줘
-ChatGPT
+
+`ChatGPT`  
 Jekyll 마크다운 문서의 제일 앞부분에는 **Front Matter**라는 블록이 반드시 있어야 합니다.  
 이 블록은 YAML 형식으로, 해당 페이지나 포스트의 **메타데이터(정보)**를 설정하는 역할을 합니다.
 
