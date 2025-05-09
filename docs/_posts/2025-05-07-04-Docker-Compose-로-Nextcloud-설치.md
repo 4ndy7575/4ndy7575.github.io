@@ -2,7 +2,7 @@
 layout: post
 title:  "Docker Compose 로 Nextcloud 설치"
 date:   2025-05-07 14:52:00 +0900
-categories: linux
+categories: docker
 ---
 - 컨테이너 포함 항목: `nextcloud`, `mariaDB`, `redis`, `collabora`, `nginx-proxy`  
 - `Docker`, `Docker Compose` 가 설치 되어 있어야 함  

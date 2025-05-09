@@ -2,7 +2,7 @@
 layout: post
 title:  "Docker Compose 로 Ollama 설치"
 date:   2025-05-07 14:57:00 +0900
-categories: linux
+categories: docker
 ---
 - 컨테이너 포함 항목: `ollama`, `open-webui`  
 - `Docker`, `Docker Compose` 가 설치 되어 있어야 함  
