@@ -4,9 +4,8 @@ title:  "Docker Compose 로 Ollama 설치"
 date:   2025-05-07 14:57:00 +0900
 categories: linux
 ---
-- 컨테이너 포함 항목: ollama, open-webui
-
-- Docker, Docker Compose 가 설치 되어 있어야 함
+- 컨테이너 포함 항목: `ollama`, `open-webui`  
+- `Docker`, `Docker Compose` 가 설치 되어 있어야 함  
 
 1. 디렉토리 생성 및 이동
 
@@ -56,7 +55,7 @@ categories: linux
 
 4. [선택] GPU 를 연산에 활용하기 위한 설정
 
-    docker-compose.yml 파일 수정 후 컨테이너 실행
+    `docker-compose.yml` 파일 수정 후 컨테이너 실행  
 
     ```yaml
     # ollama 서비스에 다음 내용 추가
@@ -69,4 +68,4 @@ categories: linux
 
 5. `Open-WebUI` 접속
 
-    브라우저 주소창에 'localhost:3000' 또는 '<서버 IP 주소>:3000' 입력
+    브라우저 주소창에 `localhost:3000` 또는 `<서버 IP 주소>:3000` 입력  

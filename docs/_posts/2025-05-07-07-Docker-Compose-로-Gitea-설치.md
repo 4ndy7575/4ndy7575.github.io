@@ -4,9 +4,8 @@ title:  "Docker Compose 로 Gitea 설치"
 date:   2025-05-07 15:11:00 +0900
 categories: linux
 ---
-- 컨테이너 포함 항목: gitea
-
-- Docker, Docker Compose 가 설치 되어 있어야 함
+- 컨테이너 포함 항목: `gitea`  
+- `Docker`, `Docker Compose` 가 설치 되어 있어야 함  
 
 1. 디렉토리 생성 및 이동
 
@@ -43,4 +42,4 @@ categories: linux
 
 4. 사이트 접속
 
-    브라우저 주소창에 'localhost:3000' 또는 '<서버 IP 주소>:3000' 입력
+    브라우저 주소창에 `localhost:3000` 또는 `<서버 IP 주소>:3000` 입력  
