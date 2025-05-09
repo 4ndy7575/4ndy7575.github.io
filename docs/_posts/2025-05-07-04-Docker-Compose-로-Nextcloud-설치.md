@@ -89,4 +89,4 @@ categories: docker
 
 4. Nextcloud 접속
 
-    브라우저 주소창에 `localhost:8080` 또는 `<서버 IP 주소>:8080` 입력  
+    브라우저 주소창에 [localhost:8080](http://localhost:8080) 또는 `<서버 IP 주소>:8080` 입력  
