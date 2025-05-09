@@ -20,17 +20,17 @@ categories: linux
     version: '3.8'
 
     services:
-    jekyll:
-      image: jekyll/jekyll:4.2.2
-      container_name: jekyll-server
-      command: jekyll serve --watch --force_polling --host 0.0.0.0
-      ports:
-        - "4000:4000"
-      volumes:
-        - ./docs:/srv/jekyll
-      working_dir: /srv/jekyll
-      tty: true
-      restart: unless-stopped
+      jekyll:
+        image: jekyll/jekyll:4.2.2
+        container_name: jekyll-server
+        command: jekyll serve --watch --force_polling --host 0.0.0.0
+        ports:
+          - "4000:4000"
+        volumes:
+          - ./docs:/srv/jekyll
+        working_dir: /srv/jekyll
+        tty: true
+        restart: unless-stopped
     ```
 
 3. `./docs/Gemfile` 파일에 다음 내용 추가

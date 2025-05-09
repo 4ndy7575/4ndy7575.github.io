@@ -20,18 +20,18 @@ categories: linux
     version: "3"
 
     services:
-    gitea:
-      image: gitea/gitea:latest
-      container_name: gitea
-      restart: always
-      environment:
-        - USER_UID=1000
-        - USER_GID=1000
-      volumes:
-        - ./gitea:/data
-      ports:
-        - "3000:3000"   # Web UI
-        - "222:22"      # SSH
+      gitea:
+        image: gitea/gitea:latest
+        container_name: gitea
+        restart: always
+        environment:
+          - USER_UID=1000
+          - USER_GID=1000
+        volumes:
+          - ./gitea:/data
+        ports:
+          - "3000:3000"   # Web UI
+          - "222:22"      # SSH
     ```
 
 3. 컨테이너 실행

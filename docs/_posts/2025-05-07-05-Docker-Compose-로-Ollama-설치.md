@@ -20,31 +20,31 @@ categories: linux
     version: '3.8'
 
     services:
-    ollama:
-      image: ollama/ollama
-      container_name: ollama
-      ports:
-        - "11434:11434"
+      ollama:
+        image: ollama/ollama
+        container_name: ollama
+        ports:
+          - "11434:11434"
+        volumes:
+          - ollama_data:/root/.ollama
+        restart: unless-stopped
+      
+      open-webui:
+        image: ghcr.io/open-webui/open-webui:main
+        container_name: open-webui
+        ports:
+          - "3000:8080"
+        volumes:
+          - openwebui_data:/app/backend/data
+        environment:
+          - OLLAMA_BASE_URL=http://ollama:11434
+        depends_on:
+          - ollama
+        restart: unless-stopped
+      
       volumes:
-        - ollama_data:/root/.ollama
-      restart: unless-stopped
-
-    open-webui:
-      image: ghcr.io/open-webui/open-webui:main
-      container_name: open-webui
-      ports:
-        - "3000:8080"
-      volumes:
-        - openwebui_data:/app/backend/data
-      environment:
-        - OLLAMA_BASE_URL=http://ollama:11434
-      depends_on:
-        - ollama
-      restart: unless-stopped
-
-    volumes:
-      ollama_data:
-      openwebui_data:
+        ollama_data:
+        openwebui_data:
     ```
 
 3. 컨테이너 실행
@@ -59,11 +59,11 @@ categories: linux
 
     ```yaml
     # ollama 서비스에 다음 내용 추가
-      deploy:
-        resources:
-        reservations:
-          devices:
-          - capabilities: [gpu]
+    deploy:
+      resources:
+      reservations:
+        devices:
+        - capabilities: [gpu]
     ```
 
 5. `Open-WebUI` 접속
