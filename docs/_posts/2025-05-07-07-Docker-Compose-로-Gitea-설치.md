@@ -42,4 +42,4 @@ categories: docker
 
 4. 사이트 접속
 
-    브라우저 주소창에 `localhost:3000` 또는 `<서버 IP 주소>:3000` 입력  
+    브라우저 주소창에 [localhost:3000](http://localhost:3000) 또는 `<서버 IP 주소>:3000` 입력  

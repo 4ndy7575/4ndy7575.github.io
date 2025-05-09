@@ -43,7 +43,7 @@ categories: docker
         restart: unless-stopped
         ports:
           - "32400:32400"  # 내부 UI용
-        network_mode: host (or bridge)  # host: DLNA, mDNS, GDM 등 자동탐색용
+        network_mode: host  # (or bridge), host: DLNA, mDNS, GDM 등 자동탐색용
         environment:
           - TZ=Asia/Seoul
           - PLEX_CLAIM=claim-xxxxxxx  # 선택, 초기 등록 시 사용 (https://plex.tv/claim)
@@ -68,7 +68,7 @@ categories: docker
 
 5. Plex 접속
 
-    브라우저 주소창에 `localhost:32400/web` 또는 `<서버 IP 주소>:32400/web` 입력  
+    브라우저 주소창에 [localhost:32400/web](http://localhost:32400/web) 또는 `<서버 IP 주소>:32400/web` 입력  
 
 6. [선택] 방화벽 설정
 
