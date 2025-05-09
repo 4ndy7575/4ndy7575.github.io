@@ -42,9 +42,9 @@ categories: linux
           - ollama
         restart: unless-stopped
       
-      volumes:
-        ollama_data:
-        openwebui_data:
+    volumes:
+      ollama_data:
+      openwebui_data:
     ```
 
 3. 컨테이너 실행
